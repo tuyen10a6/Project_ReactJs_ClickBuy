@@ -1,0 +1,64 @@
+.Home_Page {
+    padding: 0px 125px;
+    background: #dd0000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .Header_Home {
+        display: flex;
+        align-items: center;
+
+        .Logo_Home {
+            .Image_Logo {
+                width: 300px;
+                height: 50px;
+            }
+        }
+
+        .Input_search__Home {
+            padding: 0px 30px;
+
+            .Text_Input_search__HomePage {
+                width: 400px;
+                height: 47px;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                padding: 0px 10px;
+
+            }
+
+            .icon_click_search {
+                position: relative;
+
+                svg {
+                    position: absolute;
+                    top: -32px;
+                    right: 10px;
+                    color: rgb(246, 114, 114);
+                    font-size: 20px;
+                }
+
+            }
+        }
+
+        .Location_Header {
+            display: flex;
+            align-items: center;
+            line-height: 2;
+
+            .dropdown {
+                #dropdown-item-button {
+                    background-color: #ff5050;
+                    color: rgb(237, 237, 102);
+                    border: none;
+                    border-radius: 5px;
+                    height: 50px;
+                }
+            }
+        }
+
+    }
+}
