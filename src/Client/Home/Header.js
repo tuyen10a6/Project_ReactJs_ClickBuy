@@ -8,6 +8,7 @@ import { FaSeedling } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './../../Img/Image_Header/clickbuy-aar.webp';
 
+
 const Header = () => {
     const [location, setLocation] = useState(<>Khu vực của bạn: <br /><span style={{ color: "white" }}>Miền Bắc</span></>);
     const [selectedClass, setSelectedClass] = useState("");

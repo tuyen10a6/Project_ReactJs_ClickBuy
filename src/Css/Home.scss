@@ -10,13 +10,13 @@
             align-items: center;
 
             height: 80px;
-            max-width: 1450px;
+            max-width: 1250px;
             margin: 0px auto;
 
 
             .Logo_Home {
                 .Image_Logo {
-                    width: 300px;
+                    width: 250px;
                     height: 50px;
                 }
             }
@@ -25,7 +25,7 @@
                 padding: 0px 30px;
 
                 .Text_Input_search__HomePage {
-                    width: 400px;
+                    width: 300px;
                     height: 47px;
                     border: none;
                     border-radius: 8px;
@@ -65,7 +65,7 @@
             }
 
             .Contact_phone_Click {
-                margin-left: 64px;
+                margin-left: 42px;
 
                 a {
                     color: white;
@@ -96,7 +96,7 @@
             }
 
             .Cart_Header {
-                margin-left: 64px;
+                margin-left: 42px;
 
                 a {
                     color: white;
@@ -126,7 +126,7 @@
             }
 
             .Warranty_Policy {
-                margin-left: 64px;
+                margin-left: 42px;
 
                 a {
                     color: white;
@@ -170,11 +170,11 @@
         }
 
         .Background_SlideTop:before {
-            position: absolute;
-            content: 'Before';
 
-            top: -0.7rem;
-            left: 50%;
+            position: absolute;
+            content: '';
+            top: -1rem;
+            left: 45%;
             width: 110%;
             height: 125px;
             border-radius: 0 0 50% 50%;
@@ -183,8 +183,9 @@
         }
 
         .containner_Slide {
-            position: absolute;
-            width: 1450px;
+
+            width: 1250px;
+            margin: 0px auto;
 
             .cb_tip {
                 margin-top: 15px;
@@ -195,12 +196,15 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                position: relative;
             }
 
             .Row {
                 margin-top: 14px;
 
                 .cb_slider {
+                    display: flex;
+
                     .cb_menu_container {
                         width: 220px;
                         margin-right: 15px;
@@ -208,6 +212,7 @@
                         background: #ecdbdb;
                         position: relative;
                         border-radius: 10px;
+
 
                         .FullMenu_container_Slide {
                             padding: 0px;
@@ -396,20 +401,7 @@
 
                                 }
 
-                                #mega-menu-iconlink-twelve:before {
-                                    font: inherit;
-                                    font-family: dashicons;
-                                    position: static;
-                                    margin: 0 6px 0 0px;
-                                    vertical-align: top;
-                                    -webkit-font-smoothing: antialiased;
-                                    -moz-osx-font-smoothing: grayscale;
-                                    color: inherit;
-                                    background: transparent;
-                                    height: auto;
-                                    width: auto;
-
-                                }
+                                #mega-menu-iconlink-twelve:before {}
 
                                 .mega-custom-icon {
                                     position: relative;
@@ -429,6 +421,10 @@
 
 
 
+                    }
+
+                    .cb_slider_container {
+                        width: 50%;
                     }
                 }
 
