@@ -196,6 +196,245 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            .Row {
+                margin-top: 14px;
+
+                .cb_slider {
+                    .cb_menu_container {
+                        width: 220px;
+                        margin-right: 15px;
+                        min-height: 480px;
+                        background: #ecdbdb;
+                        position: relative;
+                        border-radius: 10px;
+
+                        .FullMenu_container_Slide {
+                            padding: 0px;
+
+
+                            .ItemMenu_container_Slide {
+                                list-style: none;
+                                padding: 2px;
+
+                                &:hover {
+                                    background-color: rgb(214, 208, 208);
+                                    border-radius: 5px;
+                                }
+
+
+                                .mega-custom-icon {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    text-decoration: none !important;
+                                    color: #333;
+                                    font-size: 16px;
+                                    padding: 5px;
+                                }
+
+                                .mega-custom-icons {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    text-decoration: none !important;
+                                    color: #333;
+                                    font-size: 16px;
+                                    padding: 5px;
+                                }
+
+                                .mega-custom-icon::after {
+                                    content: ">";
+                                    display: inline-block;
+                                    margin-left: 10px;
+                                    color: red;
+                                    position: absolute;
+                                    right: 5px;
+                                }
+
+                                #mega-menu-iconlink-one:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-phone-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-two:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-phone-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-three:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-samsung-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-four:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-tablet-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-five:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-laptop-red_1.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-six:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-watch-red_1.svg);
+
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-seven:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-hangcu-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-eight:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-thucu-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-nine:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-airpod-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-ten:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-repair-phone-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-eleven:before {
+                                    content: "";
+                                    background-image: url(//clickbuy.com.vn/uploads/2022/07/icon-news-red.svg);
+                                    background-size: 24px 24px;
+                                    background-repeat: no-repeat;
+                                    min-width: 35px;
+                                    height: 28px;
+                                    line-height: 24px;
+                                    vertical-align: middle;
+                                    margin-right: 7px;
+
+                                }
+
+                                #mega-menu-iconlink-twelve:before {
+                                    font: inherit;
+                                    font-family: dashicons;
+                                    position: static;
+                                    margin: 0 6px 0 0px;
+                                    vertical-align: top;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                    color: inherit;
+                                    background: transparent;
+                                    height: auto;
+                                    width: auto;
+
+                                }
+
+                                .mega-custom-icon {
+                                    position: relative;
+
+                                    .mega-indicator {
+                                        position: absolute;
+                                        margin-left: 77px;
+
+                                    }
+                                }
+
+
+
+                            }
+                        }
+
+
+
+
+                    }
+                }
+
+
+
+            }
         }
     }
 

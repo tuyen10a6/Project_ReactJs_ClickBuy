@@ -46,7 +46,7 @@ const Header = () => {
                         </div>
                         <div className="Contact_phone">
                             <p> Gọi mua hàng</p>
-                            <p> 0.853.675.166</p>
+                            <p style={{ fontWeight: 'bold' }}> 0.853.675.166</p>
                         </div>
                     </a>
 
