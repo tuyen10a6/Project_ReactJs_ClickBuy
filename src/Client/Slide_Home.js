@@ -1,40 +1,14 @@
 import Imagetip from './../Img/clipse.svg'
 
-import ImageOneSlide from './../Img/slide-dat-hang-galaxy-s23-01-5.png'
-import ImageTwoSlide from './../Img/slide-khuyen-mai-clickbuy-care-01slide.png'
-import ImageThreeSlide from './../Img/slide-valentine-day-iphone-01.png'
+// import ImageOneSlide from './../Img/slide-dat-hang-galaxy-s23-01-5.png'
+// import ImageTwoSlide from './../Img/slide-khuyen-mai-clickbuy-care-01slide.png'
+// import ImageThreeSlide from './../Img/slide-valentine-day-iphone-01.png'
 import React, { useEffect, useState, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
-import 'swiper/css';
-import "swiper/css/navigation";
-import "swiper/css/pagination"
+import MySwiper from './Home/MySwiper';
+import './../Css/SlideHome.scss'
 
 const Slide_Home = () => {
-    useEffect(() => {
-        new Swiper('.swiper-container', {
-            // Loại trình chiếu
-            direction: 'horizontal',
 
-            // Tự động chuyển slide
-            autoplay: {
-                delay: 5000,
-            },
-
-            // Các nút chuyển slide
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // Các điểm trình chiếu
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true,
-            },
-        });
-    }, []);
     return (
 
         <div className="Slide_Home">
@@ -149,24 +123,8 @@ const Slide_Home = () => {
                                 </ul>
                             </div>
                             <div className='cb_slider_container'>
+                                <MySwiper></MySwiper>
 
-                                <div className="swiper-container">
-                                    <div className="swiper-wrapper">
-                                        <div className="swiper-slide">
-                                            <img style={{ width: "660px" }} src={ImageOneSlide} alt="Image 1" />
-                                        </div>
-                                        <div className="swiper-slide">
-                                            <img style={{ width: "660px" }} src={ImageTwoSlide} alt="Image 2" />
-                                        </div>
-                                        <div className="swiper-slide">
-                                            <img style={{ width: "660px" }} src={ImageThreeSlide} alt="Image 2" />
-
-                                        </div>
-                                    </div>
-                                    <div className="swiper-pagination"></div>
-                                    <div className="swiper-button-prev"></div>
-                                    <div className="swiper-button-next"></div>
-                                </div>
                             </div>
                         </div>
                         {/*  */}

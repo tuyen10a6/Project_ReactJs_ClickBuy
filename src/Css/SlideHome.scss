@@ -1,19 +1,11 @@
-.swiper-container {
-    width: 100%;
-    height: 300px;
-}
+.swiper-wrapper {
+    width: 1980px;
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+    .swiper-slide {
+        width: 660px !important;
 
-    /* Centered text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-pagination {
-    bottom: 10px;
+        img {
+            width: 660px;
+        }
+    }
 }
