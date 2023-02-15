@@ -10,26 +10,28 @@
             align-items: center;
 
             height: 80px;
-            max-width: 1250px;
+            max-width: 1170px;
             margin: 0px auto;
 
 
             .Logo_Home {
                 .Image_Logo {
-                    width: 250px;
-                    height: 50px;
+                    display: block;
+                    height: auto;
+                    padding: 5px 0px;
+                    max-width: 245px;
                 }
             }
 
             .Input_search__Home {
-                padding: 0px 30px;
+                padding: 0px 10px;
 
                 .Text_Input_search__HomePage {
                     width: 300px;
-                    height: 47px;
+                    height: 40px;
                     border: none;
                     border-radius: 8px;
-                    font-size: 16px;
+                    font-size: 14px;
                     padding: 0px 10px;
 
                 }
@@ -39,7 +41,7 @@
 
                     svg {
                         position: absolute;
-                        top: -32px;
+                        top: -30px;
                         right: 10px;
                         color: rgb(246, 114, 114);
                         font-size: 20px;
@@ -54,18 +56,23 @@
                 line-height: 2;
 
                 .dropdown {
+                    margin-left: 10px;
+                    border-radius: 10px;
+
                     #dropdown-item-button {
                         background-color: #ff5050;
                         color: rgb(237, 237, 102);
                         border: none;
                         border-radius: 5px;
                         height: 50px;
+                        font-size: 14px;
                     }
                 }
             }
 
             .Contact_phone_Click {
                 margin-left: 42px;
+                font-size: 13px;
 
                 a {
                     color: white;
@@ -73,6 +80,7 @@
                     display: flex;
                     align-items: center;
                     text-align: center;
+                    font-size: 14px;
 
                     &:hover {
                         background: #ff5050;
@@ -86,6 +94,14 @@
                         padding: 2px 6px;
                         border-radius: 4px;
                         margin-right: 10px;
+                    }
+
+                    .Contact_phone {
+                        font-size: 12px;
+
+                        p {
+                            font-size: 13px;
+                        }
                     }
 
                     p {
@@ -120,7 +136,7 @@
 
                     p {
                         margin: 0px;
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -150,7 +166,7 @@
 
                     p {
                         margin: 0px;
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -165,7 +181,7 @@
         display: block;
 
         .Slide_Home_Content {
-            max-width: 1450px;
+            max-width: 1170px;
             margin: 0px auto;
         }
 
@@ -184,7 +200,7 @@
 
         .containner_Slide {
 
-            width: 1250px;
+            width: 1170px;
             margin: 0px auto;
 
             .cb_tip {
@@ -201,12 +217,13 @@
 
             .Row {
                 margin-top: 14px;
+                display: flex;
 
                 .cb_slider {
                     display: flex;
 
                     .cb_menu_container {
-                        width: 22%;
+                        width: 25%;
                         margin-right: 15px;
                         min-height: 480px;
                         background: #ecdbdb;
@@ -234,7 +251,7 @@
                                     align-items: center;
                                     text-decoration: none !important;
                                     color: #333;
-                                    font-size: 16px;
+                                    font-size: 14.3px;
                                     padding: 5px;
                                 }
 
@@ -413,8 +430,6 @@
                                     }
                                 }
 
-
-
                             }
                         }
 
@@ -424,7 +439,35 @@
                     }
 
                     .cb_slider_container {
-                        width: 78%;
+                        width: 75%;
+                    }
+                }
+
+                .cb_banner_container {
+                    width: 25%;
+                    background: #ecdbdb;
+                    z-index: 10;
+                    border-radius: 10px;
+                    margin-left: 20px;
+
+                    .Title_banner_container {
+                        color: red;
+                        text-align: center;
+                        padding-top: 6px;
+                    }
+
+                    .image_cb_banner_container {
+                        // display: flex;
+                        // flex-direction: column;
+                        text-align: center;
+
+                        img {
+                            width: 250px;
+                            text-align: center;
+                            margin: 8px 0px;
+                            border-radius: 6px;
+                            height: 145px;
+                        }
                     }
                 }
 

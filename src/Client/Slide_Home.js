@@ -6,6 +6,10 @@ import Imagetip from './../Img/clipse.svg'
 import React, { useEffect, useState, useRef } from 'react';
 import MySwiper from './Home/MySwiper';
 import './../Css/SlideHome.scss'
+import ImageOneRight from './../Img/Image_Slide/bpl-dat-hang-galaxy-s23-01-2.png';
+import ImageTwoRight from './../Img/Image_Slide/bpl-apple-watch-uu-dai-to-01.png';
+import ImageThreeRight from './../Img/Image_Slide/bpl-valentine-day-iphone-01.png';
+import ImageBottomHome from './../Img/Image_Slide/bgw-iphone-chinh-hang-bao-hanh-24-thang-01.png'
 
 const Slide_Home = () => {
 
@@ -21,7 +25,7 @@ const Slide_Home = () => {
                         <span>
                             <img src={Imagetip}></img>
                         </span>
-                        <span style={{ color: "#333399", fontWeight: 'bold', marginLeft: "10px" }}>Đặt mua sớm Samsung S23 Series, nhận ưu đãi lên tới 15 triệu. Đặt ngay !</span>
+                        <span style={{ color: "#333399", fontWeight: 'bold', marginLeft: "5px", fontSize: "14.5px" }}>Đặt mua sớm Samsung S23 Series, nhận ưu đãi lên tới 15 triệu. Đặt ngay !</span>
 
                     </div>
                     <div className='Row'>
@@ -124,12 +128,23 @@ const Slide_Home = () => {
                             </div>
                             <div className='cb_slider_container'>
                                 <MySwiper></MySwiper>
+                                <div className='cb_slider_containner_bottom'>
+                                    <img style={{ width: "658px", borderRadius: "10px", marginTop: "30px" }} src={ImageBottomHome}></img>
+
+                                </div>
 
                             </div>
                         </div>
                         {/*  */}
                         <div className='col3 cb_banner_container'>
-
+                            <div className='Title_banner_container'>
+                                <h6>Khuyến mại đặc biệt</h6>
+                            </div>
+                            <div className="image_cb_banner_container">
+                                <img src={ImageOneRight}></img>
+                                <img src={ImageTwoRight}></img>
+                                <img src={ImageThreeRight}></img>
+                            </div>
                         </div>
                     </div>
                 </div>

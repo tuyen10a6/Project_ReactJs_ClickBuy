@@ -18,26 +18,11 @@ const MySwiper = () => {
 
 
   return (
-    // <div className="swiper-container">
-    //   <div className="swiper-wrapper">
-    //     <div className="swiper-slide">
-    //       <img src={ImageOneSlide}></img>
-    //     </div>
-    //     <div className="swiper-slide">
-    //       <img src={ImageTwoSlide}></img>
-    //     </div>
-    //     <div className="swiper-slide">
-    //       <img src={ImageThreeSlide}></img>
-    //     </div>
-    //   </div>
-    //   <div className="swiper-pagination"></div>
-    //   <div className="swiper-button-prev"></div>
-    //   <div className="swiper-button-next"></div>
-    // </div>
+
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination]}
-      spaceBetween={12}
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
       slidesPerView={1}
       loop={true}
       speed={400}
