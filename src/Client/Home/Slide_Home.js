@@ -1,15 +1,14 @@
-import Imagetip from './../Img/clipse.svg'
+import Imagetip from './../../Img/clipse.svg'
 
 // import ImageOneSlide from './../Img/slide-dat-hang-galaxy-s23-01-5.png'
 // import ImageTwoSlide from './../Img/slide-khuyen-mai-clickbuy-care-01slide.png'
 // import ImageThreeSlide from './../Img/slide-valentine-day-iphone-01.png'
 import React, { useEffect, useState, useRef } from 'react';
-import MySwiper from './Home/MySwiper';
-import './../Css/SlideHome.scss'
-import ImageOneRight from './../Img/Image_Slide/bpl-dat-hang-galaxy-s23-01-2.png';
-import ImageTwoRight from './../Img/Image_Slide/bpl-apple-watch-uu-dai-to-01.png';
-import ImageThreeRight from './../Img/Image_Slide/bpl-valentine-day-iphone-01.png';
-import ImageBottomHome from './../Img/Image_Slide/bgw-iphone-chinh-hang-bao-hanh-24-thang-01.png'
+import MySwiper from './MySwiper';
+import './../../Css/SlideHome.scss'
+
+import DataImageBottomContent from './../../Data/DataBottomContent'
+import DataImageRight from './../../Data/DataSlideRight'
 
 const Slide_Home = () => {
 
@@ -128,8 +127,10 @@ const Slide_Home = () => {
                             </div>
                             <div className='cb_slider_container'>
                                 <MySwiper></MySwiper>
-                                <div className='cb_slider_containner_bottom'>
-                                    <img style={{ width: "658px", borderRadius: "10px", marginTop: "30px" }} src={ImageBottomHome}></img>
+                                <div style={{ marginTop: "30px" }} className='cb_slider_containner_bottom'>
+                                    {DataImageBottomContent.map((slide) => {
+                                        return <img style={{ width: "658px", borderRadius: "10px" }} key={slide.id} src={slide.Image}></img>;
+                                    })}
 
                                 </div>
 
@@ -141,9 +142,13 @@ const Slide_Home = () => {
                                 <h6>Khuyến mại đặc biệt</h6>
                             </div>
                             <div className="image_cb_banner_container">
-                                <img src={ImageOneRight}></img>
-                                <img src={ImageTwoRight}></img>
-                                <img src={ImageThreeRight}></img>
+                                {DataImageRight.map((slide) => {
+                                    return (
+                                        <div key={slide.id}>
+                                            <img src={slide.Image}></img>
+                                        </div>
+                                    );
+                                })}
                             </div>
                         </div>
                     </div>

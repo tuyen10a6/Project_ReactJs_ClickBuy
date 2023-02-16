@@ -1,6 +1,6 @@
 import Header from "./Header";
 import './../../Css/Home.scss'
-import Slide_Home from "../Slide_Home";
+import Slide_Home from "./Slide_Home";
 
 
 
