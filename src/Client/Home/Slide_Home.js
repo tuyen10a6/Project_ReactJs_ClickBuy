@@ -7,6 +7,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import MySwiper from './MySwiper';
 import './../../Css/SlideHome.scss'
 
+
 import DataImageBottomContent from './../../Data/DataBottomContent'
 import DataImageRight from './../../Data/DataSlideRight'
 
@@ -144,8 +145,9 @@ const Slide_Home = () => {
                             <div className="image_cb_banner_container">
                                 {DataImageRight.map((slide) => {
                                     return (
-                                        <div key={slide.id}>
+                                        <div className='Image_Item_bannerRight' key={slide.id}>
                                             <img src={slide.Image}></img>
+
                                         </div>
                                     );
                                 })}
