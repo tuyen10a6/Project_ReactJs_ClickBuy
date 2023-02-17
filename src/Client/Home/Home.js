@@ -2,7 +2,7 @@ import Header from "./Header";
 import './../../Css/Home.scss'
 import Slide_Home from "./Slide_Home";
 import CountdownTimer from "../CountdownTimer";
-
+import FlashSaleDay from './FlashSaleDay'
 
 const Home = (props) => {
     return (
@@ -10,12 +10,10 @@ const Home = (props) => {
 
             <Header />
             <Slide_Home />
+            <FlashSaleDay />
 
-            <CountdownTimer />
 
         </div>
-
-
     )
 }
 export default Home;
