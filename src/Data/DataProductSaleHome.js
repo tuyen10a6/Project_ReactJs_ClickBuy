@@ -13,7 +13,8 @@ const DataProductSaleHome =
             ProductName: "Apple Watch Series SE 2022 GPS 40mm ( Gen 2) | Viền nhôm dây cao su | Chính Hãng VN/A",
             old_price: null,
             priceSale: 31990000,
-            Evaluate_product: 42
+            Evaluate_product: 42,
+            Rating: 3.5 // Thêm trường rating với giá trị là số lượng ngôi sao đánh giá
 
         },
         {
@@ -22,7 +23,8 @@ const DataProductSaleHome =
             ProductName: "Iphone 14 Pro Max 128GB chính hãng VNA",
             old_price: 33990000,
             priceSale: 27890000,
-            Evaluate_product: 159
+            Evaluate_product: 159,
+            Rating: 4.8
         },
         {
             id: 3,
@@ -30,7 +32,8 @@ const DataProductSaleHome =
             ProductName: "Iphone 14 Pro 128GB chính hãng VNA",
             old_price: 33990000,
             priceSale: 27890000,
-            Evaluate_product: 159
+            Evaluate_product: 159,
+            Rating: 4.5
         },
         {
             id: 4,
@@ -38,7 +41,8 @@ const DataProductSaleHome =
             ProductName: "Apple Watch Ultra 4G 49mm | Titan Case With Trail Loop | Chính hãng VN/A",
             old_price: 33990000,
             priceSale: 27890000,
-            Evaluate_product: 159
+            Evaluate_product: 159,
+            Rating: 3
         },
         {
             id: 5,
@@ -46,7 +50,8 @@ const DataProductSaleHome =
             ProductName: "iPhone 11 64GB Chính hãng VN/A",
             old_price: 33990000,
             priceSale: 27890000,
-            Evaluate_product: 159
+            Evaluate_product: 159,
+            Rating: 3.3
         },
         {
             id: 6,
@@ -54,7 +59,8 @@ const DataProductSaleHome =
             ProductName: "Iphone 14 Pro Max 128GB chính hãng VNA",
             old_price: 33990000,
             priceSale: 27890000,
-            Evaluate_product: 159
+            Evaluate_product: 159,
+            Rating: 4.2
         },
         {
             id: 7,
@@ -62,7 +68,8 @@ const DataProductSaleHome =
             ProductName: "Samsung Galaxy S22 Ultra (5G) 8GB 128GB Chính hãng",
             old_price: 33990000,
             priceSale: 27890000,
-            Evaluate_product: 159
+            Evaluate_product: 159,
+            Rating: 4.3
         },
 
     ]

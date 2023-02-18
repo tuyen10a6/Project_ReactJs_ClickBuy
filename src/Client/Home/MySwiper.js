@@ -23,7 +23,7 @@ const MySwiper = () => {
       speed={400}
       slidesPerGroup={1}
       navigation
-      pagination={{ clickable: true }}
+
       scrollbar={{ draggable: true }}
     >
       {DataSlideContent.map((slide) => (

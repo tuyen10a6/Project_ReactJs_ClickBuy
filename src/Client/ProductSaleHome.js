@@ -5,20 +5,38 @@ import './../Css/ProductSaleHome.scss';
 // Import Swiper styles
 import 'swiper/css';
 import { Autoplay } from 'swiper';
+import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
+import 'swiper/swiper.min.css';
+import 'swiper/scss';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
 
 export default () => {
     // const formattedPrice = price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }); // "1.234.567,89 ₫"
     return (
         <Swiper
+            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
             spaceBetween={50}
-            slidesPerView={3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            slidesPerView={4.5}
+            loop
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false
+            }}
+
+            navigation
+            ={{ draggable: true }}
+
         >
             {
                 DataProductSale.map((item) =>
 
-                    <SwiperSlide key={item.id}>
+                    <SwiperSlide className='Product_Sale_Swiper' key={item.id}>
                         <div className="Product_item">
                             <img src={item.Image} className='Product_item_saleImage' />
 
@@ -30,6 +48,56 @@ export default () => {
                                 <p className='Price_Sale'>{item.priceSale.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</p>
                                 {item.old_price && <del className='original_price'>{item.old_price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</del>}
                             </div>
+
+                            <div className='Product_rating'>
+                                {/* <div className='Rating_Star'>
+                                    {Array.from({ length: 5 }, (_, i) => {
+                                        const ratingDiff = item.Rating - i; // Số lượng ngôi sao cần hiển thị màu vàng hoặc màu xám
+                                        let starColor;
+                                        if (ratingDiff >= 1) {
+                                            starColor = '#ffbb00'; // Màu vàng cho các ngôi sao đã được đánh giá
+                                        } else if (ratingDiff === 0.5) {
+                                            starColor = 'linear-gradient(to right, #ffbb00 50%, gray 50%)'; // Hiển thị 1 nửa màu vàng và 1 nửa màu xám
+                                        } else {
+                                            const nextRatingDiff = ratingDiff + 0.5;
+                                            if (nextRatingDiff >= 1) {
+                                                starColor = 'linear-gradient(to right, #ffbb00 50%, gray 50%)'; // Hiển thị 1 nửa màu vàng và 1 nửa màu xám
+                                            } else {
+                                                starColor = 'gray'; // Màu xám cho các ngôi sao chưa được đánh giá
+                                            }
+                                        }
+                                        return <FaStar key={i} className='Product_star' style={{ color: starColor }} />;
+                                    })}
+                                </div> */}
+
+                                <div className='Rating_Star'>
+                                    {Array.from({ length: 5 }, (_, i) => {
+                                        const ratingDiff = item.Rating - i;
+                                        let starColor;
+                                        if (ratingDiff >= 1) {
+                                            starColor = '#ffbb00';
+                                        } else if (ratingDiff > 0) {
+                                            if (ratingDiff > 0 && ratingDiff < 1) {
+                                                starColor = `linear-gradient(to right, #ffbb00 50%, gray 50%)`;
+                                                return <FaStarHalfAlt key={i} className='Product_star' style={{ color: "#ffbb00" }} />;
+                                            } else {
+                                                starColor = `gray`;
+                                            }
+                                        } else {
+                                            starColor = 'gray';
+                                        }
+                                        return <FaStar key={i} className='Product_star' style={{ color: starColor }} />;
+                                    })}
+                                </div>
+                                <div className='Rating_Value'>
+                                    <p>({item.Evaluate_product} đánh giá) </p>
+                                </div>
+
+                            </div>
+
+
+
+
 
 
                         </div>

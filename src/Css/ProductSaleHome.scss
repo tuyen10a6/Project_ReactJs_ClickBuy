@@ -1,5 +1,6 @@
-.swiper-slide {
+.Product_Sale_Swiper {
     width: 236px !important;
+    margin-right: 20px !important;
 
     .Product_item {
         background-color: #fff;
@@ -7,6 +8,7 @@
         text-align: center;
         border-radius: 12px;
         padding: 0px 10px;
+        width: 236px;
 
         .Product_item_saleImage {
             width: 140px;
@@ -48,6 +50,25 @@
             .original_price {
                 color: rgb(136, 133, 133);
                 font-size: 12px;
+            }
+        }
+
+        .Product_rating {
+            display: flex;
+            align-items: center;
+
+            .Rating_Star {
+                text-align: center;
+                line-height: 24px;
+                margin-top: -6px;
+                margin-right: 10px;
+            }
+
+            .Rating_Value {
+                p {
+                    margin: 0px;
+                    font-size: 12px;
+                }
             }
         }
 
