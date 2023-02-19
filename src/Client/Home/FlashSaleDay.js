@@ -1,7 +1,7 @@
 import React from "react";
-import CountdownTimer from "../CountdownTimer";
-import ProductSaleHome from "../ProductSaleHome";
-import './../../Css/FlashSaleHome.scss';
+import CountdownTimer from "./CountdownTimer";
+import ProductSaleHome from "./ProductSaleHome";
+import './../../Css/HomePage/FlashSaleHome.scss';
 import ImageLogoSale from './../../Img/Image_LogoSaleProduct/flash-sale-moi-ngay.png'
 const FlashSaleDay = () => {
     return (

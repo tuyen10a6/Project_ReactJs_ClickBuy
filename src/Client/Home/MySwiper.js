@@ -20,7 +20,7 @@ const MySwiper = () => {
       spaceBetween={50}
       slidesPerView={1}
       loop={true}
-      speed={400}
+      speed={1000}
       slidesPerGroup={1}
       navigation
 

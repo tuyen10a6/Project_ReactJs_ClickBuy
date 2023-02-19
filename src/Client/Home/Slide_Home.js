@@ -5,7 +5,7 @@ import Imagetip from './../../Img/clipse.svg'
 // import ImageThreeSlide from './../Img/slide-valentine-day-iphone-01.png'
 import React, { useEffect, useState, useRef } from 'react';
 import MySwiper from './MySwiper';
-import './../../Css/SlideHome.scss'
+import './../../Css/HomePage/SlideHome.scss'
 
 
 import DataImageBottomContent from './../../Data/DataBottomContent'

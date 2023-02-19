@@ -1,16 +1,14 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import DataProductSale from './../Data/DataProductSaleHome';
-import './../Css/ProductSaleHome.scss';
+import DataProductSale from '../../Data/DataProductSaleHome';
+import './../../Css/HomePage/ProductSaleHome.scss';
 // Import Swiper styles
 import 'swiper/css';
 import { Autoplay } from 'swiper';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import 'swiper/swiper.min.css';
 import 'swiper/scss';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+
 
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -20,17 +18,16 @@ export default () => {
     // const formattedPrice = price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }); // "1.234.567,89 ₫"
     return (
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-            spaceBetween={50}
-            slidesPerView={4.5}
-            loop
-            autoplay={{
-                delay: 3000,
-                disableOnInteraction: false
-            }}
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
 
+            slidesPerView={5}
+            loop={false}
+            speed={900}
             navigation
-            ={{ draggable: true }}
+            ={{ clickable: true }}
+
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
 
         >
             {
@@ -94,12 +91,6 @@ export default () => {
                                 </div>
 
                             </div>
-
-
-
-
-
-
                         </div>
                     </SwiperSlide>
 

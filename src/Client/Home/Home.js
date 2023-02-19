@@ -1,8 +1,9 @@
 import Header from "./Header";
-import './../../Css/Home.scss'
+import './../../Css/HomePage/Home.scss'
 import Slide_Home from "./Slide_Home";
-import CountdownTimer from "../CountdownTimer";
+
 import FlashSaleDay from './FlashSaleDay'
+import ProductApple from "./ProductApple";
 
 const Home = (props) => {
     return (
@@ -11,6 +12,7 @@ const Home = (props) => {
             <Header />
             <Slide_Home />
             <FlashSaleDay />
+            <ProductApple />
 
 
         </div>

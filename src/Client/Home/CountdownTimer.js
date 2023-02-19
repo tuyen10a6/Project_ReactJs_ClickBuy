@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './../Css/CountDownTimer.scss'
+import './../../Css/HomePage/CountDownTimer.scss'
 const CountdownTimer = () => {
     // Sử dụng Hooks
     const [secondsLeft, setSecondsLeft] = useState(86400);
